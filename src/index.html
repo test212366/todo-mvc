@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="screen">
+                <div class="screen__registration-card">
+                    <button class="btn haveCard"> У меня есть карта</button>
+                    <div class="screen__registration-title">Зарегестрируйте вашу карту: </div>
+                    <small class="screen__registration-small">Карта должна соблюдать следущие пункты: </small>
+                    <ul class="points">
+                        <li class="points__item"> больше 9 символов </li>
+                        <li class="points__item"> корректный владелец карты </li>
+                        <li class="points__item"> пароль должен быть более чем 5 символов</li>
+                    </ul>
+                    <form id="registrationCard">
+                        <input class="input" id="titleCardReg" type="number" placeholder="Номер карты" required>
+                        <input class="input" id="passwordReg" type="password" placeholder="Пароль" required>
+                        <button type="submit" class="btn createCard">Создать карту</button>
+                    </form>
+                    <button class="btn random" id="gereratePassword">Сгенерировать пароль</button>
+
+                    <div class="new__password">
+                    <div class="title">Новый пароль:</div>
+                </div>
+                </div>
+                <div class="screen__autorization-card">
+                    <button class="btn regist">Зарегестрироваться</button>
+                    <div class="screen__autorization-title">Авторизуйтесь: </div>
+                    <form id="autorizationCard">
+                        <input class="input" id="titleCardAuto" type="number" placeholder="Номер карты" required>
+                        <input class="input" id="passwordAuto" type="password" placeholder="Пароль" required>
+                        <button type="submit" class="btn confirm">Войти</button>
+                    </form>
+                </div>
+                <div class="screen__display" style="display: none">
+                    <div class="screen__display-title">Вы авторизованны</div>
+                    <div class="screen__display-balance">Ваш баланс на карте: 1000</div>
+                    <nav class="navigation-display">
+                        <button class="btn setMPhone">Положить деньги на счет телефона</button>
+                        <button class="btn getMCard">Снять деньги с карты</button>
+                        <button class="btn setMCard">Положить деньни на карту</button>
+                        <button class="btn difrMCard">Перевести деньги на другую карту</button>
+                    </nav>
+                </div>
+                <div class="screen__display-setMCard" style="display: none">
+                    <form class="screen__display-form-setMCard">
+                        <input class="setMcardNumber" type="number" placeholder="Введите номер карты для перевода">
+                        <input class="setMcardSum" type='number' placeholder="Введите сумму для перевода">
+                        <button class="btn startSetMCard" type="submit">Перевести</button>
+                    </form>
+                </div>
+            </div>
+            <div class="keyboard">
+                <ul class="buttons">
+                    <ul class="one">
+                        <li class="button-li">1</li>
+                        <li class="button-li">2</li>
+                        <li class="button-li">3</li>
+                        <li class="button-li">Дом</li>
+                    </ul>
+                    <ul class="two">
+                        <li class="button-li">4</li>
+                        <li class="button-li">5</li>
+                        <li class="button-li">6</li>
+                        <li class="button-li"><</li>
+                    </ul>
+                    <ul class="tree">
+                        <li class="button-li">7</li>
+                        <li class="button-li">8</li>
+                        <li class="button-li">9</li>
+                        <li class="button-li">0</li>
+                    </ul>
+
+                </ul>
+            </div>
+
+        </div>
+    </main>
+
+<script src="index.js"></script>
+</body>
+</html>
